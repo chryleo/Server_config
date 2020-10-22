@@ -12,7 +12,7 @@ Disk /dev/sda: 931 GiB, 999653638144 bytes, 1952448512 sectors
 
 `$ sudo fdisk /dev/sdb `
 
-首先要转GPT，输入`g`添加gpt label，然后输入`n`创建新分区，全部默认即可，最后输入`p`看分区表
+首先要转GPT，输入`g`添加gpt table，然后输入`n`创建新分区，全部默认即可，最后输入`p`看分区表
 
 ```
 Command (m for help): p
@@ -30,7 +30,7 @@ Device     Start         End     Sectors  Size Type
 输入`w`保存分区并退出
 
 ## 格式化硬盘
-`$ mkfs.ext4 /dev/sdb1`
+`$ sudo mkfs.ext4 /dev/sdb1`
 
 ## 同步home
 先进root
