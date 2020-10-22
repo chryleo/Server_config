@@ -12,7 +12,7 @@ Disk /dev/sda: 931 GiB, 999653638144 bytes, 1952448512 sectors
 
 `$ sudo fdisk /dev/sdb `
 
-首先要转GPT，输入`g`添加gpt table，然后输入`n`创建新分区，全部默认即可，最后输入`p`看分区表
+首先要转GPT，输入`g`添加gpt label，然后输入`n`创建新分区，全部默认即可，最后输入`p`看分区表
 
 ```
 Command (m for help): p
@@ -36,6 +36,10 @@ Device     Start         End     Sectors  Size Type
 先进root
 
 `$ sudo su`
+
+回到根目录，方便删库
+
+`$ cd ~`
 
 **接下来的操作都要小心！！**
 
